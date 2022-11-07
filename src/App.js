@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Wordle from './components/Wordle';
 import WordleImg from './images/wordle-logo.png';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   return (
     <div className='App'>
       <img src={WordleImg} alt='' />
-      {solution && <div>Solution is: {solution}</div>}
+      {solution && <Wordle solution={solution} />}
     </div>
   );
 }
